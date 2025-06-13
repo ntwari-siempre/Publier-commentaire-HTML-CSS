@@ -1,0 +1,102 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #28a745; /* Couleur verte de succès */
+            padding: 10px;
+            position: fixed; /* Fixer la navbar en haut */
+            width: 100%; /* Prendre toute la largeur */
+            top: 0; /* Positionner en haut */
+            z-index: 1000; /* Assurer que la navbar reste au-dessus */
+        }
+        nav a {
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background: #218838; /* Couleur plus foncée au survol */
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            margin-top: 60px; /* Ajouter un espace pour la navbar */
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 5px; /* Espace entre les boutons */
+        }
+        .btn-primary {
+            background: #007bff; /* Couleur bleue */
+        }
+        .btn-primary:hover {
+            background: #0056b3; /* Couleur plus foncée au survol */
+        }
+        .btn-danger {
+            background: #dc3545; /* Couleur rouge */
+        }
+        .btn-danger:hover {
+            background: #c82333; /* Couleur plus foncée au survol */
+        }
+        .article {
+            margin-top: 30px;
+            padding: 15px;
+        }
+        .show-form {
+            margin-top: 20px;
+            display: block;
+            margin: 20px auto; /* Centrer le bouton */
+        }
+        .article-list {
+            margin-top: 30px;
+        }
+        .article-item {
+            margin-bottom: 20px; /* Espace entre les articles */
+            padding: 10px;
+            display: flex;
+            flex-direction: column; /* Changer en colonne */
+            align-items: flex-start; /* Alignement à gauche */
+        }
+        .author {
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px; /* Espace entre l'auteur et le titre */
+        }
+        .author img {
+            width: 40px; /* Taille de l'avatar */
+            height: 40px;
+            border-radius: 50%; /* Rendre l'image ronde */
+            margin-right: 10px; /* Espace entre l'avatar et le nom */
+        }
+        .title {
+            font-weight: bold;
+            margin: 10px 0; /* Espace entre le titre et le contenu */
+        }
+        .button-group {
+            display: inline-flex; /* Alignement en ligne */
+            gap: 5px; /* Espace entre les boutons */
+        }

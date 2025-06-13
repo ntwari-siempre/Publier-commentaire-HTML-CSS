@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publication d'Article</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="#">Accueil</a>
+    <a href="#" id="listArticlesButton">Articles</a>
+    <a href="#">À propos</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <form id="articleForm">
+        <label for="author">Auteur du commentaire</label>
+        <input type="text" id="author" name="author" required>
+
+        <label for="profileImage">Image de profil</label>
+        <input type="file" id="profileImage" name="profileImage" accept="image/*" required>
+
+        <label for="title">Titre du commentaire</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="content">Contenu du commentaire</label>
+        <textarea id="content" name="content" rows="10" required></textarea>
+
+        <button type="submit" class="btn-primary">Publier</button>
+    </form>
+
+    <div class="article-list" id="articleList" style="display: none;">
+        <h3>Liste des Commentaires Publiés</h3>
+        <ul id="articles"></ul>
+    </div>
+
+    <!--<div class="article" id="articleDisplay" style="display: none;">
+        <h3 id="displayTitle"></h3>
+        <p id="displayContent"></p>
+        <button id="editButton" class="btn-primary">Modifier le commentaire</button>
+    </div>
+
+    <button class="show-form" id="showFormButton" style="display: none;">Publier</button>-->
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
